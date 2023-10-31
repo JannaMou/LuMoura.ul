@@ -1,8 +1,13 @@
 ﻿CREATE TABLE Servicos (
     ServicoID INT IDENTITY(1, 1) PRIMARY KEY,
-    Nome VARCHAR(255) NOT NULL,
+    NomeServico VARCHAR(255) NOT NULL,
+    DescricaoServico Varchar (200) not null,
+    ValorServico Decimal (10,2) not null,
     DuracaoEmHoras DECIMAL(4, 2) NOT NULL
 );
+
+drop table Servicos
+
 
 CREATE TABLE Horarios (
     HorarioID INT IDENTITY(1, 1) PRIMARY KEY,
@@ -13,10 +18,10 @@ CREATE TABLE Agendamentos (
     AgendamentoID INT IDENTITY(1, 1) PRIMARY KEY,
     ServicoID INT,
     HorarioID INT,
-    DataAgendamento DATE NOT NULL,
+    DataAgendamento Varchar NOT NULL,
     NomeCliente VARCHAR(255) NOT NULL
 );
-
+drop table Agendamentos
 CREATE TABLE Cliente (
     IdCliente      INT PRIMARY KEY IDENTITY (1,1) NOT NULL,
     Nome    VARCHAR(50) NOT NULL,
@@ -35,4 +40,11 @@ CREATE TABLE Login
 	Foreign key (FKCliente) references Cliente(IdCliente)  
 );
 
+DECLARE @hora TIME = '09:00';
+WHILE @hora <= '17:00'
+BEGIN
+    INSERT INTO Horarios (Hora)
+    VALUES (@hora);
+    SET @hora = DATEADD(HOUR, 1, @hora);
+END;
 select * from Cliente

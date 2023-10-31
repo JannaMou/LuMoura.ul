@@ -40,18 +40,12 @@
             this.comboServiço = new System.Windows.Forms.ComboBox();
             this.textDescricao = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TxtEmail = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -171,12 +165,6 @@
             // 
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.dataGridView2);
-            this.groupBox1.Controls.Add(this.TxtEmail);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label5);
@@ -198,15 +186,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // label5
+            // textBox3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(490, 127);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 15);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Descrição";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.textBox3.Location = new System.Drawing.Point(803, 209);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(166, 23);
+            this.textBox3.TabIndex = 22;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(564, 383);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.Size = new System.Drawing.Size(405, 162);
+            this.dataGridView2.TabIndex = 21;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(102, 295);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Atualizar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -218,81 +221,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // label5
             // 
-            this.button2.Location = new System.Drawing.Point(102, 295);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Atualizar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(97, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(336, 23);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(97, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(336, 23);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 15);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Nome";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 98);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 15);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Email";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 69);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 15);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Telefone";
-            // 
-            // TxtEmail
-            // 
-            this.TxtEmail.Location = new System.Drawing.Point(97, 98);
-            this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(336, 23);
-            this.TxtEmail.TabIndex = 20;
-            this.TxtEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(564, 383);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(405, 162);
-            this.dataGridView2.TabIndex = 21;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(803, 209);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 23);
-            this.textBox3.TabIndex = 22;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(490, 127);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 15);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Descrição";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // AgendarHorario
             // 
@@ -326,12 +263,6 @@
         private GroupBox groupBox1;
         private Label label5;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private TextBox TxtEmail;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label6;
-        private Label label7;
-        private Label label8;
         private Button button2;
         private Button button1;
         private TextBox textBox3;
