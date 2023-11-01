@@ -59,13 +59,13 @@ namespace LuMoura.ul
         private void textDescricao_TextChanged(object sender, EventArgs e)
         {
             Agendar agendar = new Agendar();
-            Agendar.agendar(textNome.Text, textTelefone.Text,comboServiço.Text, textDescricao.Text);
+            //Agendar.agendar(textNome.Text, textTelefone.Text,comboServiço.Text, textDescricao.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Agendar horario = new Agendar();
-            horario.Cadastrar(textNome.Text, textBox2.Text,TxtEmail.Text);
+            //horario.Cadastrar(textNome.Text, textBox2.Text,TxtEmail.Text);
             MessageBox.Show("Cadastrado");
 
         }
