@@ -22,6 +22,8 @@ namespace LuMoura.ul
             {
                 CadastroDAL objdal = new CadastroDAL();
                 objdal.FichaCadastro(TxtNome.Text, TxtCPF.Text, TxtTelefone.Text, TxtEmail.Text);
+                TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = "";
+
             }
 
         }
