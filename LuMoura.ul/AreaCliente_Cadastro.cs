@@ -16,5 +16,14 @@ namespace LuMoura.ul
         {
             InitializeComponent();
         }
+
+        private void BtCadastrar_Click(object sender, EventArgs e)
+        {
+            {
+                CadastroDAL objdal = new CadastroDAL();
+                objdal.FichaCadastro(TxtNome.Text, TxtCPF.Text, TxtTelefone.Text, TxtEmail.Text);
+            }
+
+        }
     }
 }
