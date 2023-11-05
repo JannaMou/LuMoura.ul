@@ -75,6 +75,7 @@
             groupBox1.Size = new Size(1219, 385);
             groupBox1.TabIndex = 13;
             groupBox1.TabStop = false;
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // label4
             // 

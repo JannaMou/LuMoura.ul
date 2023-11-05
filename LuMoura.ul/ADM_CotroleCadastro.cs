@@ -83,5 +83,18 @@ namespace LuMoura.ul
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False");
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dr;
+            dataGridView1.DataSource = bs;
+        }
     }
 }
