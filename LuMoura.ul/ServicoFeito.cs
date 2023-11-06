@@ -36,6 +36,11 @@ namespace LuMoura.ul
         {
 
         }
+
+        private void BtnPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
