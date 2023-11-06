@@ -110,7 +110,7 @@
             this.BtAtualizar.TabIndex = 25;
             this.BtAtualizar.Text = "Atualizar";
             this.BtAtualizar.UseVisualStyleBackColor = true;
-            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click_1);
+            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click);
             // 
             // BtBuscar
             // 
