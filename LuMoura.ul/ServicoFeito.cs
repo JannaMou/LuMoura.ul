@@ -20,27 +20,22 @@ namespace LuMoura.ul
 
         private void ServicoFeito_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LojaVirtualDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LuMoura;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
-
-            SqlCommand cmd = new SqlCommand("Select * from Cliente where nome like '%" + TxtOpc.Text + "%' ORDER BY IdCliente DESC", conn);
+            SqlCommand cmd = new SqlCommand("select * from Servicos order by ServicosID desc", conn);
 
             SqlDataReader dr = cmd.ExecuteReader();
-
             BindingSource bs = new BindingSource();
-            bs.DataSource = dr;
 
+            bs.DataSource = dr;
             GridCliente.DataSource = bs;
 
-            GridCliente.CellContentClick += (sender, e) =>
-            {
-                if (e.RowIndex >= 0 && e.ColumnIndex == GridCliente.Columns["BtnExcluir"].Index)
-                {
-                    GridCliente.Rows.RemoveAt(e.RowIndex); // Remove a linha clicada
-                }
-            };
+        }
+
+        private void GridCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
-    }
+    
 }

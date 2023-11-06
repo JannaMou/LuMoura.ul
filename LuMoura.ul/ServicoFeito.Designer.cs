@@ -42,6 +42,7 @@
             this.GridCliente.RowTemplate.Height = 25;
             this.GridCliente.Size = new System.Drawing.Size(558, 273);
             this.GridCliente.TabIndex = 1;
+            this.GridCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridCliente_CellContentClick);
             // 
             // TxtOpc
             // 
