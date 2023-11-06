@@ -57,3 +57,4 @@ C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-w
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AreaCliente_Cadastro.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Properties.Resources.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ServicoFeito.resources
+C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ServicoFeito.resources
