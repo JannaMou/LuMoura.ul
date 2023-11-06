@@ -22,7 +22,7 @@ namespace LuMoura.ul
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select * from Servicos order by ServicosID desc", conn);
+            SqlCommand cmd = new SqlCommand("Select * from Servico where nome like '%" + TxtOpc.Text + "%' ORDER BY ServicoID DESC", conn);
 
             SqlDataReader dr = cmd.ExecuteReader();
             BindingSource bs = new BindingSource();
