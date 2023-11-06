@@ -53,3 +53,7 @@ C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\L
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.genruntimeconfig.cache
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ref\LuMoura.ul.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ADM_CotroleCadastro.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ADM_CotroleCadastro.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AreaCliente_Cadastro.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Properties.Resources.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ServicoFeito.resources
