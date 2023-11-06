@@ -77,6 +77,16 @@ namespace LuMoura.ul
         private void BtAtualizar_Click(object sender, EventArgs e)
         {
             Atualizar(TxtNome.Text, TxtCPF.Text, TxtTelefone.Text, TxtEmail.Text);
+
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False");
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dr;
+            dataGridView1.DataSource = bs;
         }
 
         private void BtCadastrar_Click(object sender, EventArgs e)
