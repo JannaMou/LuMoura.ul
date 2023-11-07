@@ -106,5 +106,10 @@ namespace LuMoura.ul
             bs.DataSource = dr;
             dataGridView1.DataSource = bs;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -64,7 +64,8 @@ namespace LuMoura.ul
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Agendar horario = new Agendar();
+            AreaCliente_Cadastro areaCliente_Cadastro = new AreaCliente_Cadastro();
+            areaCliente_Cadastro.Show();
            
 
         }
@@ -87,6 +88,12 @@ namespace LuMoura.ul
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Agendar agendar = new Agendar();
+            agendar.Atualizar(dataGridView1);
         }
     }
 }
