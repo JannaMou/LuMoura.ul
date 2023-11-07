@@ -59,6 +59,7 @@
             this.BtnPesquisar.TabIndex = 3;
             this.BtnPesquisar.Text = "PESQUISAR";
             this.BtnPesquisar.UseVisualStyleBackColor = true;
+            this.BtnPesquisar.Click += new System.EventHandler(this.BtnPesquisar_Click);
             // 
             // ServicoFeito
             // 
