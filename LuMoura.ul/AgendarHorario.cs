@@ -30,7 +30,7 @@ namespace LuMoura.ul
         private void textNome_TextChanged(object sender, EventArgs e)
         {
             Agendar horario = new Agendar();
-            horario.Exibir(dataGridView1);
+            horario.Exibir(dataGridView1, textNome.Text);
 
         }
 

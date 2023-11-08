@@ -54,7 +54,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(791, 291);
+            this.label1.Location = new System.Drawing.Point(640, 291);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 0;
@@ -63,6 +63,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(564, 315);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 10);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);

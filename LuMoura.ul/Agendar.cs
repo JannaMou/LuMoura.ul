@@ -43,12 +43,23 @@ namespace LuMoura.ul
             dataGridView1.DataSource = bs;
         }
 
-        public void Exibir(DataGridView dataGridView1)
+        public void Exibir(DataGridView dataGridView1, string nome)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
+            //SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente WHERE Nome LIKE '%" + nome + "%'", conn);
+
+            SqlCommand cmd;
+
+            if (!string.IsNullOrEmpty(nome))
+            {
+                cmd = new SqlCommand("SELECT * FROM Cliente WHERE Nome LIKE '%" + nome + "%'", conn);
+            }
+            else
+            {
+                cmd = new SqlCommand("SELECT * FROM Cliente", conn);
+            }
 
             SqlDataReader dr = cmd.ExecuteReader();
             BindingSource bs = new BindingSource();
