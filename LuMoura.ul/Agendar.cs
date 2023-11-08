@@ -58,7 +58,7 @@ namespace LuMoura.ul
             }
             else
             {
-                cmd = new SqlCommand("SELECT * FROM Cliente", conn);
+                MessageBox.Show("cliente nao encontrado");
             }
 
             SqlDataReader dr = cmd.ExecuteReader();
