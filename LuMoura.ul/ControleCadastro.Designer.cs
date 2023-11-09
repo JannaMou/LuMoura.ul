@@ -46,6 +46,7 @@
             TxtNome = new TextBox();
             label2 = new Label();
             TxtCPF = new TextBox();
+            BtExcluir = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -53,6 +54,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(BtExcluir);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(TxtCodigo);
             groupBox1.Controls.Add(dataGridView1);
@@ -105,7 +107,7 @@
             // 
             // BtAtualizar
             // 
-            BtAtualizar.Location = new Point(838, 52);
+            BtAtualizar.Location = new Point(825, 51);
             BtAtualizar.Name = "BtAtualizar";
             BtAtualizar.Size = new Size(75, 23);
             BtAtualizar.TabIndex = 25;
@@ -228,6 +230,16 @@
             TxtCPF.Size = new Size(100, 23);
             TxtCPF.TabIndex = 3;
             // 
+            // BtExcluir
+            // 
+            BtExcluir.Location = new Point(906, 51);
+            BtExcluir.Name = "BtExcluir";
+            BtExcluir.Size = new Size(75, 23);
+            BtExcluir.TabIndex = 29;
+            BtExcluir.Text = "Excluir";
+            BtExcluir.UseVisualStyleBackColor = true;
+            BtExcluir.Click += BtExcluir_Click;
+            // 
             // ControleCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -263,5 +275,6 @@
         private TextBox TxtNome;
         private Label label2;
         private TextBox TxtCPF;
+        private Button BtExcluir;
     }
 }
