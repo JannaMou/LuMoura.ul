@@ -26,7 +26,6 @@ namespace LuMoura.ul
                 TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = "";
                
             }
-
         }
 
         private void BtCadastrar_Click_1(object sender, EventArgs e)
