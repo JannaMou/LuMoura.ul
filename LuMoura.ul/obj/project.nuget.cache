@@ -1,6 +1,9 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
   "dgSpecHash": "PZDfizIqLQvVq/m10P+7z4mDS82ghmQUhovmqBeC9YQkdknsdK1Ze9FEFFaJg6+bzZSyfRDt4ll+FTi835SxEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\alexa\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
@@ -91,6 +94,7 @@
     "C:\\Users\\alexa\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+<<<<<<< Updated upstream
 =======
   "dgSpecHash": "6EzgQ7mRolAvkx+lfxw3fIoTnqOfTbsfQD7LvnSKgLoJIRMzzQcsy9Bnj2Lmnye6BjPwLNRCwHHCcu3tdErkZg==",
   "success": true,
@@ -183,6 +187,8 @@
     "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
 >>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
+=======
+>>>>>>> Stashed changes
   ],
   "logs": []
 }
