@@ -94,6 +94,7 @@
             // 
             // dataGridView1
             // 
+<<<<<<< HEAD
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(288, 158);
@@ -101,6 +102,16 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(753, 173);
             dataGridView1.TabIndex = 26;
+=======
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(288, 158);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(753, 173);
+            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+>>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
             // 
             // BtAtualizar
             // 
@@ -133,12 +144,21 @@
             // 
             // label3
             // 
+<<<<<<< HEAD
             label3.AutoSize = true;
             label3.Location = new Point(244, 116);
             label3.Name = "label3";
             label3.Size = new Size(47, 15);
             label3.TabIndex = 21;
             label3.Text = "E-mail :";
+=======
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(235, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 15);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "E-mail :";
+>>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
             // 
             // TxtEmail
             // 
@@ -196,12 +216,21 @@
             // 
             // label1
             // 
+<<<<<<< HEAD
             label1.AutoSize = true;
             label1.Location = new Point(244, 57);
             label1.Name = "label1";
             label1.Size = new Size(46, 15);
             label1.TabIndex = 0;
             label1.Text = "Nome :";
+=======
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(235, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome :";
+>>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
             // 
             // TxtNome
             // 
@@ -212,12 +241,21 @@
             // 
             // label2
             // 
+<<<<<<< HEAD
             label2.AutoSize = true;
             label2.Location = new Point(256, 85);
             label2.Name = "label2";
             label2.Size = new Size(34, 15);
             label2.TabIndex = 2;
             label2.Text = "CPF :";
+=======
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(247, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "CPF :";
+>>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
             // 
             // TxtCPF
             // 

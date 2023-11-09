@@ -107,7 +107,11 @@ namespace LuMoura.ul
             dataGridView1.DataSource = bs;
         }
 
+<<<<<<< HEAD
         private void BtCadastrar_Click_1(object sender, EventArgs e)
+=======
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+>>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
         {
 
         }

@@ -40,7 +40,6 @@
             this.comboServiço = new System.Windows.Forms.ComboBox();
             this.textDescricao = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(504, 209);
+            this.label1.Location = new System.Drawing.Point(526, 291);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 0;
@@ -62,9 +61,11 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(564, 209);
+            this.monthCalendar1.Location = new System.Drawing.Point(515, 315);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 10);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
+            this.monthCalendar1.TodayDate = new System.DateTime(2023, 11, 8, 0, 0, 0, 0);
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // textNome
@@ -112,11 +113,11 @@
             // 
             // BtnCadastar
             // 
-            this.BtnCadastar.Location = new System.Drawing.Point(894, 551);
+            this.BtnCadastar.Location = new System.Drawing.Point(784, 486);
             this.BtnCadastar.Name = "BtnCadastar";
-            this.BtnCadastar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCadastar.Size = new System.Drawing.Size(170, 23);
             this.BtnCadastar.TabIndex = 8;
-            this.BtnCadastar.Text = "Cadastrar";
+            this.BtnCadastar.Text = "Cadastar Horario";
             this.BtnCadastar.UseVisualStyleBackColor = true;
             this.BtnCadastar.Click += new System.EventHandler(this.BtnCadastar_Click);
             // 
@@ -163,7 +164,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.dataGridView2);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
@@ -187,20 +187,13 @@
             this.groupBox1.Text = "groupBox1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(803, 209);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 23);
-            this.textBox3.TabIndex = 22;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(564, 383);
+            this.dataGridView2.Location = new System.Drawing.Point(0, 315);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(405, 162);
+            this.dataGridView2.Size = new System.Drawing.Size(418, 162);
             this.dataGridView2.TabIndex = 21;
             // 
             // button2
@@ -211,6 +204,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Atualizar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -251,7 +245,6 @@
         #endregion
 
         private Label label1;
-        private MonthCalendar monthCalendar1;
         private TextBox textNome;
         private TextBox textTelefone;
         private Label label2;
@@ -266,7 +259,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button button2;
         private Button button1;
-        private TextBox textBox3;
         private DataGridView dataGridView2;
+        public MonthCalendar monthCalendar1;
     }
 }

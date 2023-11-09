@@ -29,6 +29,8 @@ namespace LuMoura.ul
 
         private void textNome_TextChanged(object sender, EventArgs e)
         {
+            Agendar horario = new Agendar();
+            horario.Exibir(dataGridView1, textNome.Text);
 
         }
 
@@ -44,11 +46,28 @@ namespace LuMoura.ul
 
         private void BtnCadastar_Click(object sender, EventArgs e)
         {
-            Agendar horario = new Agendar();
 
-            string dataSelecionada = monthCalendar1.SelectionStart.ToString("dd/MM/yyyy");
+            DateTime dataSelecionada = monthCalendar1.SelectionStart; // Substitua 'monthCalendar1' pelo nome do seu controle MonthCalendar
 
-            
+            // Agora, você pode formatar a data em uma string com o formato desejado
+            //string dataFormatada = dataSelecionada.ToString("dd/MM/yyyy");
+            //MessageBox.Show(dataFormatada);
+
+
+            //DateTime dataSelecionada = monthCalendar1.Value;
+            //string dataSelecionadaString = dataSelecionada.ToString("dd/MM/yyyy");
+
+
+
+
+
+            Agendar horario1 = new Agendar();
+
+            horario1.agendar(dataSelecionada,textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text);
+
+
+
+                        
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -58,13 +77,14 @@ namespace LuMoura.ul
 
         private void textDescricao_TextChanged(object sender, EventArgs e)
         {
-            Agendar agendar = new Agendar();
-            agendar.agendar(textNome.Text, textTelefone.Text,comboServiço.Text, textDescricao.Text);
+            //Agendar agendar = new Agendar();
+            //agendar.agendar(textNome.Text, textTelefone.Text,comboServiço.Text, textDescricao.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Agendar horario = new Agendar();
+            AreaCliente_Cadastro areaCliente_Cadastro = new AreaCliente_Cadastro();
+            areaCliente_Cadastro.Show();
            
 
         }
@@ -87,6 +107,12 @@ namespace LuMoura.ul
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Agendar agendar = new Agendar();
+            agendar.Atualizar(dataGridView1);
         }
     }
 }

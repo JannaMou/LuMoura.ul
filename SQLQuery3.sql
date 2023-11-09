@@ -16,10 +16,17 @@ CREATE TABLE Horarios (
 
 CREATE TABLE Agendamentos (
     AgendamentoID INT IDENTITY(1, 1) PRIMARY KEY,
-    ServicoID INT,
-    HorarioID INT,
-    DataAgendamento Varchar NOT NULL,
-    NomeCliente VARCHAR(255) NOT NULL
+    FK_ServicoID INT  ,
+    FK_HorarioID INT  ,
+    DataAgendamento DATETIME NOT NULL,   
+    NomeCliente VARCHAR(255) NOT NULL,
+    Telefone Varchar (100) not null,
+    Servico Varchar (100) not null,
+    Descricao varchar (100),
+
+    Foreign key (FK_ServicoID) references Servicos(ServicoID),
+    Foreign key (FK_HorarioID) references Cliente(IdCliente),
+
 );
 drop table Agendamentos
 CREATE TABLE Cliente (
@@ -28,7 +35,7 @@ CREATE TABLE Cliente (
     CPF            VARCHAR(50) ,
     Telefone       VARCHAR(12) ,
     Email       VARCHAR(50) NOT NULL,        
-    DataCadastro   DATETIME       DEFAULT (getdate()) NOT NULL,
+    DataCadastro   DATETIME (100)      DEFAULT (getdate()) NOT NULL,
 );
 
 CREATE TABLE Login
@@ -47,4 +54,4 @@ BEGIN
     VALUES (@hora);
     SET @hora = DATEADD(HOUR, 1, @hora);
 END;
-select * from Cliente
+select * from Horarios
