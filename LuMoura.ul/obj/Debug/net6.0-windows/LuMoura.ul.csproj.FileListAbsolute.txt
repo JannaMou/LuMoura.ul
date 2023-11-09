@@ -52,7 +52,6 @@ C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\r
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.csproj.CopyComplete
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.genruntimeconfig.cache
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ref\LuMoura.ul.dll
-C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ADM_CotroleCadastro.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AreaCliente_Cadastro.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Properties.Resources.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ServicoFeito.resources
@@ -89,3 +88,5 @@ C:\Users\gustavo.sgmingas\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.
 C:\Users\gustavo.sgmingas\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ref\LuMoura.ul.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastro.resources
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.CotroleCadastro.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastro.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.CotroleCadastro.resources

@@ -12,15 +12,28 @@ namespace LuMoura.ul
 
 
 
-        public void agendar(DateTime Dataa, string Nome, string Telefone, string Servico, string Descricao)
+        public void agendar(DateTime dataAgendamento, string nome, string telefone, string servico, string descricao)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            conn.Open();
+            using (SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+            {
+                conn.Open();
 
-            SqlCommand cmd = new SqlCommand("insert into Agendamentos values (2, 2,'" + Dataa + "','" + Nome+ "','"+Telefone+"','"+Servico+"','"+Descricao+"')", conn);
+                using (SqlCommand cmd = new SqlCommand(
+                    "INSERT INTO Agendamentos (FK_ServicoID, FK_HorarioID, DataAgendamento, NomeCliente, Telefone, Servico, Descricao) " +
+                    "SELECT Servicos.ServicoID, Horarios.HorarioID, @DataAgendamento, @NomeCliente, @Telefone, @Servico, @Descricao " +
+                    "FROM Servicos " +
+                    "INNER JOIN Horarios ON Servicos.AlgumaColuna = Horarios.OutraColuna " +
+                    "WHERE AlgumaCondição;", conn))
+                {
+                    cmd.Parameters.AddWithValue("@DataAgendamento", dataAgendamento);
+                    cmd.Parameters.AddWithValue("@NomeCliente", nome);
+                    cmd.Parameters.AddWithValue("@Telefone", telefone);
+                    cmd.Parameters.AddWithValue("@Servico", servico);
+                    cmd.Parameters.AddWithValue("@Descricao", descricao);
 
-            cmd.ExecuteNonQuery();
-                
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
 
         public void Cadastrar(string Nome, string Telefone, string Email)
