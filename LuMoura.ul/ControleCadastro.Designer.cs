@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            BtExcluir = new Button();
             label4 = new Label();
             TxtCodigo = new TextBox();
             dataGridView1 = new DataGridView();
@@ -46,7 +47,6 @@
             TxtNome = new TextBox();
             label2 = new Label();
             TxtCPF = new TextBox();
-            BtExcluir = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -79,10 +79,20 @@
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
             // 
+            // BtExcluir
+            // 
+            BtExcluir.Location = new Point(1009, 56);
+            BtExcluir.Name = "BtExcluir";
+            BtExcluir.Size = new Size(75, 23);
+            BtExcluir.TabIndex = 29;
+            BtExcluir.Text = "Excluir";
+            BtExcluir.UseVisualStyleBackColor = true;
+            BtExcluir.Click += BtExcluir_Click;
+            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(664, 56);
+            label4.Location = new Point(767, 61);
             label4.Name = "label4";
             label4.Size = new Size(23, 15);
             label4.TabIndex = 28;
@@ -90,7 +100,7 @@
             // 
             // TxtCodigo
             // 
-            TxtCodigo.Location = new Point(691, 51);
+            TxtCodigo.Location = new Point(794, 56);
             TxtCodigo.Name = "TxtCodigo";
             TxtCodigo.Size = new Size(47, 23);
             TxtCodigo.TabIndex = 27;
@@ -99,7 +109,7 @@
             // 
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(288, 158);
+            dataGridView1.Location = new Point(391, 163);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(650, 173);
@@ -107,7 +117,7 @@
             // 
             // BtAtualizar
             // 
-            BtAtualizar.Location = new Point(825, 51);
+            BtAtualizar.Location = new Point(928, 56);
             BtAtualizar.Name = "BtAtualizar";
             BtAtualizar.Size = new Size(75, 23);
             BtAtualizar.TabIndex = 25;
@@ -117,7 +127,7 @@
             // 
             // BtBuscar
             // 
-            BtBuscar.Location = new Point(744, 51);
+            BtBuscar.Location = new Point(847, 56);
             BtBuscar.Name = "BtBuscar";
             BtBuscar.Size = new Size(75, 23);
             BtBuscar.TabIndex = 24;
@@ -128,7 +138,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Lu;
-            pictureBox1.Location = new Point(23, 70);
+            pictureBox1.Location = new Point(126, 75);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(204, 279);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -138,7 +148,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(244, 116);
+            label3.Location = new Point(347, 121);
             label3.Name = "label3";
             label3.Size = new Size(47, 15);
             label3.TabIndex = 21;
@@ -146,7 +156,7 @@
             // 
             // TxtEmail
             // 
-            TxtEmail.Location = new Point(288, 112);
+            TxtEmail.Location = new Point(391, 117);
             TxtEmail.Name = "TxtEmail";
             TxtEmail.Size = new Size(324, 23);
             TxtEmail.TabIndex = 22;
@@ -154,7 +164,7 @@
             // BtMenu
             // 
             BtMenu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            BtMenu.Location = new Point(79, 19);
+            BtMenu.Location = new Point(182, 24);
             BtMenu.Name = "BtMenu";
             BtMenu.Size = new Size(75, 23);
             BtMenu.TabIndex = 20;
@@ -164,7 +174,7 @@
             // BtCadastrar
             // 
             BtCadastrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            BtCadastrar.Location = new Point(638, 112);
+            BtCadastrar.Location = new Point(741, 117);
             BtCadastrar.Name = "BtCadastrar";
             BtCadastrar.Size = new Size(88, 23);
             BtCadastrar.TabIndex = 19;
@@ -175,7 +185,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(449, 84);
+            label7.Location = new Point(552, 89);
             label7.Name = "label7";
             label7.Size = new Size(57, 15);
             label7.TabIndex = 11;
@@ -183,7 +193,7 @@
             // 
             // TxtTelefone
             // 
-            TxtTelefone.Location = new Point(512, 81);
+            TxtTelefone.Location = new Point(615, 86);
             TxtTelefone.Name = "TxtTelefone";
             TxtTelefone.Size = new Size(100, 23);
             TxtTelefone.TabIndex = 12;
@@ -192,7 +202,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Emoji", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label6.Location = new Point(449, 10);
+            label6.Location = new Point(552, 15);
             label6.Name = "label6";
             label6.Size = new Size(267, 32);
             label6.TabIndex = 10;
@@ -201,7 +211,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(244, 57);
+            label1.Location = new Point(347, 62);
             label1.Name = "label1";
             label1.Size = new Size(46, 15);
             label1.TabIndex = 0;
@@ -209,7 +219,7 @@
             // 
             // TxtNome
             // 
-            TxtNome.Location = new Point(288, 52);
+            TxtNome.Location = new Point(391, 57);
             TxtNome.Name = "TxtNome";
             TxtNome.Size = new Size(324, 23);
             TxtNome.TabIndex = 1;
@@ -217,7 +227,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(256, 85);
+            label2.Location = new Point(359, 90);
             label2.Name = "label2";
             label2.Size = new Size(34, 15);
             label2.TabIndex = 2;
@@ -225,20 +235,10 @@
             // 
             // TxtCPF
             // 
-            TxtCPF.Location = new Point(288, 81);
+            TxtCPF.Location = new Point(391, 86);
             TxtCPF.Name = "TxtCPF";
             TxtCPF.Size = new Size(100, 23);
             TxtCPF.TabIndex = 3;
-            // 
-            // BtExcluir
-            // 
-            BtExcluir.Location = new Point(906, 51);
-            BtExcluir.Name = "BtExcluir";
-            BtExcluir.Size = new Size(75, 23);
-            BtExcluir.TabIndex = 29;
-            BtExcluir.Text = "Excluir";
-            BtExcluir.UseVisualStyleBackColor = true;
-            BtExcluir.Click += BtExcluir_Click;
             // 
             // ControleCadastro
             // 
