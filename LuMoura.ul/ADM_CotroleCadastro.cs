@@ -106,5 +106,10 @@ namespace LuMoura.ul
             bs.DataSource = dr;
             dataGridView1.DataSource = bs;
         }
+
+        private void BtCadastrar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
