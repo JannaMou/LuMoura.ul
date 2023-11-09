@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace LuMoura.ul
 {
-    public partial class ADM_CotroleCadastro : Form
+    public partial class ControleCadastro : Form
     {
-        public ADM_CotroleCadastro()
+        public ControleCadastro()
         {
             InitializeComponent();
         }
@@ -22,8 +22,9 @@ namespace LuMoura.ul
         {
             //Buscar
 
-            //SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LojaVirtualDB;Integrated Security=True;Connect Timeout=30;Encrypt=False");
-            //conn.Open();
+
+            //SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
+            //conn.Open();  
 
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
@@ -51,11 +52,13 @@ namespace LuMoura.ul
                 }
 
             }
-
         }
 
         public void Atualizar(string Nome, string CPF, string Telefone, string Email)
         {
+            //SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
+            //conn.Open();
+
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
@@ -73,31 +76,29 @@ namespace LuMoura.ul
             TxtTelefone.Text = "";
             TxtEmail.Text = "";
         }
-
         private void BtAtualizar_Click(object sender, EventArgs e)
         {
             Atualizar(TxtNome.Text, TxtCPF.Text, TxtTelefone.Text, TxtEmail.Text);
-
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False");
-            conn.Open();
-
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
-
-            SqlDataReader dr = cmd.ExecuteReader();
-            BindingSource bs = new BindingSource();
-            bs.DataSource = dr;
-            dataGridView1.DataSource = bs;
         }
 
         private void BtCadastrar_Click(object sender, EventArgs e)
         {
+            {
+                CadastroDAL objdal = new CadastroDAL();
+                objdal.FichaCadastro(TxtNome.Text, TxtCPF.Text, TxtTelefone.Text, TxtEmail.Text);
+                TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = "";
 
+                dataGridView1.Refresh();
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False");
-            conn.Open();
+            //SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
+            //conn.Open();
+
+           SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+           conn.Open();
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
 
@@ -107,9 +108,36 @@ namespace LuMoura.ul
             dataGridView1.DataSource = bs;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void BtExcluir_Click(object sender, EventArgs e)
         {
+            
+            int IdCliente = Convert.ToInt32(dataGridView1.CurrentRow.Cells["IdCliente"].Value);
 
+            //using (SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False"))
+
+            using (SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand("DELETE FROM Cliente WHERE IdCliente = @ID", conn))
+                {
+                    cmd.Parameters.AddWithValue("@ID", IdCliente);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+
+                        MessageBox.Show("Cadastro Excluído com Sucesso.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Falha ao Excluir o Cadastro.");
+                    }
+                    TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = "";
+                }
+            }
         }
     }
 }

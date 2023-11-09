@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LuMoura.ul
 {
-    public partial class AreaCliente_Cadastro : Form
+    public partial class CotroleCadastro : Form
     {
-        public AreaCliente_Cadastro()
+        public CotroleCadastro()
         {
             InitializeComponent();
         }
