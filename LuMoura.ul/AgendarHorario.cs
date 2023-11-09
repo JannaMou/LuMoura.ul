@@ -58,13 +58,11 @@ namespace LuMoura.ul
             //string dataSelecionadaString = dataSelecionada.ToString("dd/MM/yyyy");
 
 
+            Agendar agendar = new Agendar();
+            agendar.agendar(dataSelecionada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text);
 
 
-
-            Agendar horario1 = new Agendar();
-
-            horario1.agendar(dataSelecionada,textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text);
-
+            
 
 
                         

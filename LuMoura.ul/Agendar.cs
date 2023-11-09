@@ -14,13 +14,13 @@ namespace LuMoura.ul
 
         public void agendar(DateTime Dataa, string Nome, string Telefone, string Servico, string Descricao)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LuMoura;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("insert into Agendamentos values ('" + Dataa + "','" + Nome+ "', '"+Telefone+"','"+Servico+"','"+Descricao+"')", conn);
+            SqlCommand cmd = new SqlCommand("insert into Agendamentos values (2, 2,'" + Dataa + "','" + Nome+ "','"+Telefone+"','"+Servico+"','"+Descricao+"')", conn);
 
             cmd.ExecuteNonQuery();
-
+                
         }
 
         public void Cadastrar(string Nome, string Telefone, string Email)
