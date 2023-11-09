@@ -5225,50 +5225,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
     "C:\\Users\\alexa\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
-=======
-    "C:\\Users\\alexa\\.nuget\\packages\\": {}
->>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
       "projectUniqueName": "C:\\Users\\alexa\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
       "projectName": "LuMoura.ul",
       "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
       "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\alexa\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\obj\\",
-<<<<<<< Updated upstream
-=======
-      "projectUniqueName": "C:\\Users\\daniel.nconceicao\\source\\repos\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
-      "projectName": "LuMoura.ul",
-      "projectPath": "C:\\Users\\daniel.nconceicao\\source\\repos\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
-      "packagesPath": "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daniel.nconceicao\\source\\repos\\LuMoura.ul\\LuMoura.ul\\obj\\",
->>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\daniel.nconceicao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> 3b63cfd56dacd85701436d97579bae2e2494759c
-=======
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5325,5 +5294,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\alexa\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
