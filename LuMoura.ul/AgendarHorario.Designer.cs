@@ -113,7 +113,7 @@
             // 
             // BtnCadastar
             // 
-            this.BtnCadastar.Location = new System.Drawing.Point(784, 486);
+            this.BtnCadastar.Location = new System.Drawing.Point(799, 547);
             this.BtnCadastar.Name = "BtnCadastar";
             this.BtnCadastar.Size = new System.Drawing.Size(170, 23);
             this.BtnCadastar.TabIndex = 8;
@@ -134,19 +134,6 @@
             // comboServiço
             // 
             this.comboServiço.FormattingEnabled = true;
-            this.comboServiço.Items.AddRange(new object[] {
-            "Pé e mão ",
-            "Pé ",
-            "Mão",
-            "Postiça",
-            "Adesivo",
-            "Esmaltação",
-            "Esmaltação infantil",
-            "SPA dos Pés",
-            "Cuticulagem",
-            "Decoração acréscimo",
-            "Designer de sobrancelhas",
-            "Limpeza sobrancelhas"});
             this.comboServiço.Location = new System.Drawing.Point(564, 90);
             this.comboServiço.Name = "comboServiço";
             this.comboServiço.Size = new System.Drawing.Size(405, 23);
@@ -234,6 +221,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "AgendarHorario";
             this.Text = "AgendarHorario";
+            this.Load += new System.EventHandler(this.AgendarHorario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

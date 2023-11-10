@@ -41,8 +41,23 @@ namespace LuMoura.ul
 
         private void comboServiço_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Obtém o item selecionado no ComboBox
+            string servicoSelecionado = comboServiço.SelectedItem?.ToString();
 
+            // Verifica se há um item selecionado antes de chamar o método
+            if (!string.IsNullOrEmpty(servicoSelecionado))
+            {
+                Agendar agendar = new Agendar();
+                agendar.Exibir_Servicos(comboServiço);
+            }
+
+            else
+            {
+                Agendar agendar = new Agendar();
+                agendar.Exibir_Servicos(comboServiço);
+            }
         }
+
 
         private void BtnCadastar_Click(object sender, EventArgs e)
         {
@@ -111,6 +126,24 @@ namespace LuMoura.ul
         {
             Agendar agendar = new Agendar();
             agendar.Atualizar(dataGridView1);
+        }
+
+        private void AgendarHorario_Load(object sender, EventArgs e)
+        {
+            string servicoSelecionado = comboServiço.SelectedItem?.ToString();
+
+            // Verifica se há um item selecionado antes de chamar o método
+            if (!string.IsNullOrEmpty(servicoSelecionado))
+            {
+                Agendar agendar = new Agendar();
+                agendar.Exibir_Servicos(comboServiço);
+            }
+
+            else
+            {
+                Agendar agendar = new Agendar();
+                agendar.Exibir_Servicos(comboServiço);
+            }
         }
     }
 }
