@@ -5,7 +5,7 @@
     ValorServico Decimal (10,2) not null,
     DuracaoEmHoras DECIMAL(4, 2) NOT NULL
 );
-
+select * from Servicos
 drop table Servicos
 
 
@@ -25,9 +25,16 @@ CREATE TABLE Agendamentos (
     Descricao varchar (100),
 
     Foreign key (FK_ServicoID) references Servicos(ServicoID),
-    Foreign key (FK_HorarioID) references Cliente(IdCliente),
+    Foreign key (FK_HorarioID) references Horarios(HorarioID),
 
 );
+drop table Agendamentos
+select *from Agendamentos
+INSERT INTO Agendamentos (FK_ServicoID, FK_HorarioID, DataAgendamento, NomeCliente, Telefone, Servico, Descricao)
+VALUES
+   ( '2023-11-09', 'Nome do Cliente', '123456789', 'Tipo de Serviço', 'Descrição do Agendamento');
+
+
 drop table Agendamentos
 CREATE TABLE Cliente (
     IdCliente      INT PRIMARY KEY IDENTITY (1,1) NOT NULL,
