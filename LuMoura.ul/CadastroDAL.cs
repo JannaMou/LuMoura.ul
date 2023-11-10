@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace LuMoura.ul
 {
@@ -22,18 +23,21 @@ namespace LuMoura.ul
                 SqlCommand cmd = new SqlCommand("insert into Cliente output inserted.idCliente values('" + Nome + " ','" + CPF + "',' " + Telefone + " ',' " + Email + " ', getdate())", conn);
                 int idCliente = Convert.ToInt32(cmd.ExecuteScalar());
 
-                //SqlCommand cmd2 = new SqlCommand("insert into Login values('" + Login + "','" + Senha + "', '" + idCliente + "' )", conn);
-                //cmd2.ExecuteScalar();                
 
+                 
                 conn.Close();
 
-                MessageBox.Show("dados salvo");
+            
 
-                return idCliente;
+            MessageBox.Show("dados salvo");
+
+          
+
+            return idCliente;
 
 
             }
-
+       
 
 
 

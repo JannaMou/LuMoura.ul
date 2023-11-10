@@ -10,17 +10,33 @@ namespace LuMoura.ul
     internal class Agendar
     {
 
+        public void Exibir_Servicos( ComboBox item)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            conn.Open();
+
+            // Use parâmetros SQL para evitar problemas de SQL Injection
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Servicos", conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            item.Items.Clear();
+
+            while (reader.Read())
+            {
+                item.Items.Add(reader["NomeServico"].ToString());
+            }
+        }
 
 
         public void agendar(DateTime Dataa, string Nome, string Telefone, string Servico, string Descricao)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LuMoura;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("insert into Agendamentos values ('" + Dataa + "','" + Nome+ "', '"+Telefone+"','"+Servico+"','"+Descricao+"')", conn);
+            SqlCommand cmd = new SqlCommand("insert into Agendamentos values (2, 2,'" + Dataa + "','" + Nome+ "','"+Telefone+"','"+Servico+"','"+Descricao+"')", conn);
 
             cmd.ExecuteNonQuery();
-
+                
         }
 
         public void Cadastrar(string Nome, string Telefone, string Email)
