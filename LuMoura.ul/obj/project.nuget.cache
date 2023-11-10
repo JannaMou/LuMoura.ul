@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V0vM8NMUVViYAr6eavUFPo+HVex7siClXXKIZanWcAPWoVbYe9vcIBu3tYXGNlUufenxvYMPhDh5dj1N7DBKuQ==",
+  "dgSpecHash": "vL+SHq8kvgPAOavQcdWbIUYBpAZ5Y+Q6JH+mZ2hWw8Ms6V/BxALLj51faIcW7MP1RH++sbkHbpqkT97RMptgMg==",
   "success": true,
   "projectFilePath": "C:\\Users\\janaina.mslima\\source\\repos\\OFC\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\janaina.mslima\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.5\\guna.ui2.winforms.2.0.4.5.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\hora\\0.0.3\\hora.0.0.3.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
@@ -32,6 +33,7 @@
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
+    "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.collections.immutable\\1.3.0\\system.collections.immutable.1.3.0.nupkg.sha512",
@@ -52,6 +54,7 @@
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\janaina.mslima\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
