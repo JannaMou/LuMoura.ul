@@ -63,9 +63,9 @@
             this.groupBox1.Controls.Add(this.textBoxNome);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(148, 34);
+            this.groupBox1.Location = new System.Drawing.Point(150, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(452, 384);
+            this.groupBox1.Size = new System.Drawing.Size(431, 398);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Adicionar Serviços";
@@ -91,7 +91,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Thistle;
             this.button1.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(190, 334);
+            this.button1.Location = new System.Drawing.Point(194, 354);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 23);
             this.button1.TabIndex = 5;
