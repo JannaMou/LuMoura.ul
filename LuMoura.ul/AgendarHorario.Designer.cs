@@ -39,16 +39,17 @@
             this.comboServiço = new System.Windows.Forms.ComboBox();
             this.textDescricao = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -184,6 +185,19 @@
             this.groupBox1.Text = "Agendar Horário";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.monthCalendar1);
+            this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Controls.Add(this.BtnCadastar);
+            this.groupBox2.Location = new System.Drawing.Point(25, 282);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(950, 240);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Horários";
+            // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.Thistle;
@@ -193,18 +207,6 @@
             this.dataGridView2.RowTemplate.Height = 25;
             this.dataGridView2.Size = new System.Drawing.Size(418, 162);
             this.dataGridView2.TabIndex = 21;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Thistle;
-            this.button2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(25, 545);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "🠔  Atualizar ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -229,17 +231,26 @@
             this.label5.Text = "Descrição:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // groupBox2
+            // button2
             // 
-            this.groupBox2.Controls.Add(this.monthCalendar1);
-            this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Controls.Add(this.BtnCadastar);
-            this.groupBox2.Location = new System.Drawing.Point(25, 282);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(950, 240);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Horários";
+            this.button2.BackColor = System.Drawing.Color.Thistle;
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(25, 545);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "🠔  Atualizar ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(489, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 18);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "label1";
             // 
             // AgendarHorario
             // 
@@ -252,8 +263,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,5 +288,6 @@
         private DataGridView dataGridView2;
         public MonthCalendar monthCalendar1;
         private GroupBox groupBox2;
+        private Label label1;
     }
 }
