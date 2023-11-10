@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{E2E084AE-0F7
 	ProjectSection(SolutionItems) = preProject
 		LuMoura.ul\Agendar.cs = LuMoura.ul\Agendar.cs
 		LuMoura.ul\CadastroDAL.cs = LuMoura.ul\CadastroDAL.cs
+		ServicosDAL.cs = ServicosDAL.cs
 	EndProjectSection
 EndProject
 Global
