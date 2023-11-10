@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace LuMoura.ul
                 SqlCommand cmd = new SqlCommand("insert into Cliente output inserted.idCliente values('" + Nome + " ','" + CPF + "',' " + Telefone + " ',' " + Email + " ', getdate())", conn);
                 int idCliente = Convert.ToInt32(cmd.ExecuteScalar());
 
-
+            //bfdbfgbgbvbv
                  
                 conn.Close();
 
