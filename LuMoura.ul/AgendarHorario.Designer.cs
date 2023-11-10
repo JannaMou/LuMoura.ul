@@ -202,7 +202,7 @@
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.Thistle;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(297, 25);
+            this.dataGridView2.Location = new System.Drawing.Point(298, 72);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
             this.dataGridView2.Size = new System.Drawing.Size(418, 162);
